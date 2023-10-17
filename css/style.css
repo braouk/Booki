@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -11,6 +14,10 @@
 
 .fa-solid {
     color: var(--main-color);
+}
+
+.icon-search .fa-solid { 
+    color: black; 
 }
 
 body {
@@ -26,9 +33,126 @@ body {
 }
 
 a {
-    color: inherit;
+    color: black;
     text-decoration: none;
 }
+
+li {
+    list-style: none;
+  }
+
+
+/****** Header ******/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+  }
+
+.nav-list {
+    display: flex;
+}
+
+.logo {
+    height: 20px;
+}
+
+.nav-items {
+    margin-left: 40px;
+    color: black;
+  }
+  
+  .nav-links {
+    padding: 40px 15px 0px 15px;
+  }
+  
+  .nav-links:hover {
+    color: #0065fc;
+    border-top: #0065fc 3px solid;
+  }
+
+
+  
+
+  /****** section recherches ******/
+
+  .search-section {
+    margin-top: 70px;
+  }
+
+  h1 {
+    margin-bottom: 8px;
+  }
+
+  form {
+    display: flex;
+    justify-items: center;
+    margin: 0%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.label-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #F2F2F2;
+    margin: 0%;
+    padding: 20px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+    
+.field-search {
+    border: none;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: #f2f2f2;
+    max-width: 240px;
+    padding: 0%;
+    margin: 0%;
+    padding-left: 17px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+.submit {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0%;
+    padding: 15px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;    
+   
+}
+
+.submit p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-size: 18px;
+}
+
+::placeholder {
+    color: black;
+    opacity:1
+    
+}
+
+/*******************/
+
 
 .section-title {
     margin: 0;
@@ -74,6 +198,7 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    max-width: 1440px;
 }
 
 /****** Populaires ***********/
