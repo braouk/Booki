@@ -47,7 +47,7 @@ li {
 header {
     display: flex;
     justify-content: space-between;
-    padding-top: 45px;
+    padding-top: 40px;
   }
 
 .nav-list {
@@ -64,12 +64,12 @@ header {
   }
   
   .nav-links {
-    padding: 40px 15px 0px 15px;
+    padding: 43px 15px 0px 15px;
   }
   
   .nav-links:hover {
-    color: #0065fc;
-    border-top: #0065fc 3px solid;
+    color: var(--main-color);
+    border-top: var(--main-color) 3px solid;
   }
 
 
@@ -90,7 +90,7 @@ header {
     justify-items: center;
     margin: 0%;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     height: 50px;
 }
 
@@ -99,7 +99,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 15px 0px 0px 15px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     margin: 0%;
     padding: 20px;
     max-width: 50px;
@@ -111,12 +111,12 @@ header {
     border: none;
     border-top: solid 1px;
     border-bottom: solid 1px;
-    border-color: #f2f2f2;
+    border-color: var(--main-bg-color);
     max-width: 240px;
     padding: 0%;
     margin: 0%;
     padding-left: 17px;
-    font-size: 1.2em;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -128,10 +128,10 @@ header {
     margin: 0%;
     padding: 15px;
     border-radius: 0px 15px 15px 0px;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 600;    
+    font-size: 1.125rem;
+    font-weight: 700;    
    
 }
 
@@ -142,7 +142,7 @@ header {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 ::placeholder {
@@ -151,7 +151,35 @@ header {
     
 }
 
-/*******************/
+/******** Filters section ***********/
+
+.filters h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filters p {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 50px;
+    padding: 4px 19px;
+    gap: 10px;
+    border: solid 2px;
+    border-color: #d9d9d9;
+    border-radius: 25px 25px 25px 25px;
+
+}
+
+
+/*******/
+
 
 
 .section-title {
