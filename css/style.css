@@ -177,6 +177,10 @@ header {
 
 }
 
+.filter:hover {
+    background-color: #DEEBFF;
+}
+
 
 /*******/
 
