@@ -32,8 +32,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 p {
   font-size: 1.1em;
 }
@@ -52,7 +50,7 @@ li {
 header {
   display: flex;
   justify-content: space-between;
-  padding-top: 45px;
+  padding: 30px 30px;
 }
 
 .nav-list {
@@ -69,12 +67,12 @@ header {
 }
 
 .nav-links {
-  padding: 43px 15px 0px 15px;
+  padding: 27px 15px 0px 15px;
 }
 
 .nav-links:hover {
-    color: #0065fc;
-    border-top: #0065fc 3px solid;
+  color: #0065fc;
+  border-top: #0065fc 3px solid;
 }
 
 /****** section recherches ******/
@@ -177,6 +175,13 @@ form {
   border: solid 2px;
   border-color: #d9d9d9;
   border-radius: 25px 25px 25px 25px;
+}
+
+.labels-and-filters {
+  display: flex;
+
+  align-items: center;
+  gap: 15px;
 }
 
 .filter:hover {
