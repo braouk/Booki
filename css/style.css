@@ -76,6 +76,7 @@ li {
   width: auto;
   top: 24px;
   right: 20px;
+  margin-left: 15px;
   position: relative;
 }
 
@@ -326,10 +327,9 @@ form {
 }
 
 .populaires-cards img {
-  width: 33%;
-  height: 136px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+    width: 33%;
+    height: 136px;
+    border-radius: 20px 0px 0px 20px;
 }
 
 .populaires-cards .card-content {
