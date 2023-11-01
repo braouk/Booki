@@ -505,6 +505,13 @@ footer li {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .activites .marseille-cards img {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+}
 }
 
 /* Small devices (phones, less than 768px) */
@@ -514,4 +521,12 @@ footer li {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .main-container {
+    max-width: 767px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
 }
