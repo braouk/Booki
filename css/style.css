@@ -135,12 +135,10 @@ form {
   border-bottom: solid 1px;
   border-color: var(--main-bg-color);
   max-width: 195px;
-  padding: 0 24px;  
+  padding: 0 24px;
   font-size: 18px;
   font-weight: bold;
-} 
-
-
+}
 
 .submit {
   display: flex;
@@ -317,7 +315,7 @@ form {
 }
 
 .hebergements h4 {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .hebergements-title {
@@ -454,7 +452,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 33%;
-  padding: 20px 20px; 
+  padding: 20px 20px;
 }
 
 footer li {
@@ -515,62 +513,76 @@ footer li {
     height: 200px;
     margin: 0;
     padding: 0;
-}
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    
-body {
-    width: 100%;
+  * {
+    box-sizing: border-box;
+  }
+
+  .main-container {
     padding: 0;
+    margin: 0;
+  }
+
+
+  /*** header 767***/
+
+  .navbar {
+    margin: 0px;
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+    justify-content: center;
+  }
+
+  .navbar .nav-logo {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .nav-right {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-right a {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .navbar a:hover {
+    border-bottom: 2px solid var(--main-color);
+    border-top: none;
+  }
+
+  /*** recherches 767***/
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .search-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.field-search {
+    max-width: none;
+    width: 100%;
+    height: 100%;
 }
 
+
+
+
+  /***/
 
   .populaires-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-
-  .main-container {
-    max-width: 767px;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar {
-    margin: 0px;
-    display: flex;
-    flex-flow: row-reverse wrap-reverse;
-    justify-content: center;  
-}
-
-.navbar .nav-logo {
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
-
-.nav-right{
-    width: 100%;
-    height: auto;
-
-}
-
-.nav-right a {
-    margin: 0px;
-    width: 100%;
-    
-    
-}
-
-.navbar a:hover {
-    border-bottom: 2px solid var(--main-color);
-    border-top: none;
-
-}
-
-
-
 }
