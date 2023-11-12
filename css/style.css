@@ -163,6 +163,10 @@ form {
   font-size: 18px;
 }
 
+.icon-button {
+  display: none !important;
+}
+
 ::placeholder {
   color: black;
   opacity: 1;
@@ -299,7 +303,7 @@ form {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -325,8 +329,8 @@ form {
 
 .hebergements-cards {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: wrap;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -465,6 +469,7 @@ footer li {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
   .main-container {
     box-sizing: border-box;
@@ -472,17 +477,26 @@ footer li {
     padding: 0 50px;
   }
 
-  .filters {
+  .labels-and-filters {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .hebergements-and-populaires {
     flex-direction: column;
+    gap: 0px;
   }
 
   .hebergements {
     width: 100%;
+  }
+
+  .hebergements-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 30px;
   }
 
   .populaires {
@@ -518,17 +532,19 @@ footer li {
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
   * {
     box-sizing: border-box;
   }
 
   .main-container {
+    width: 100%;
     padding: 0;
     margin: 0;
   }
 
-  /*** header 767***/
+  /*** header mobile ***/
 
   .navbar {
     margin: 0px;
@@ -557,35 +573,35 @@ footer li {
     border-top: none;
   }
 
-  /*** recherches 767***/
+  /*** recherches mobile ***/
 
   h1 {
     margin-top: 0;
   }
 
   .search-section {
-    padding: 20px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
   }
 
-.field-search {
+  .field-search {
     max-width: none;
     width: 100%;
     height: 100%;
-}
+  }
 
-/*** filters 767 ***/
+  /*** filters mobile ***/
 
-.labels-and-filters {
+  .labels-and-filters {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     gap: 16px;
-}
+  }
 
-.filters-buttons {
+  .filters-buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -593,54 +609,126 @@ footer li {
     gap: 15px;
     margin: 0%;
     width: 100%;
-}
+  }
 
-.filter {
+  .filter {
     width: 47%;
     padding: 0%;
     margin: 0;
     min-height: 50px;
-}
+  }
 
-.filters {
-    padding: 20px;
-}
+  .filters {
+    padding: 0 20px;
+  }
 
-/*** hebergements and populaires ***/
+  .icon-button {
+    display: block !important;
+    border-radius: 15px 15px;
+    box-shadow: 0px 5px 3px 0px #cfcfcf;
+  }
 
-.hebergements-and-populaires {
+  .search-button {
+    display: none !important;
+  }
+
+  .icon-button .fa-solid {
+    color: white;
+  }
+
+  /*** hebergements and populaires mobile ***/
+
+  .hebergements-and-populaires {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     margin: 0px;
     padding: 0;
-}
+  }
 
-.hebergements-cards {
+  .hebergements-and-populaires section {
+    padding: 20px;
+  }
+
+  .hebergements-cards {
     width: 100%;
     text-align: left;
-}
+  }
 
-.hebergements-and-populaires .hebergements {
+  .hebergements-and-populaires .hebergements {
     background-color: white;
-}
+  }
 
-.populaires-cards, .hebergements-cards {
+  .populaires {
+    margin-top: 0;
+  }
+
+  .populaires-cards,
+  .hebergements-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px 20px 20px 20px;
-}
+  }
 
-.populaires-cards .card, .hebergements-cards .card {
+  .populaires-cards .card,
+  .hebergements-cards .card {
     width: auto;
     padding: 5px 5px;
-    
-}
+  }
 
-.hebergements-cards img {
+  .hebergements-cards img {
     width: 100%;
     max-height: 192px;
-}
+  }
+
+  .populaires-cards .card {
+    margin-top: 0;
+  }
+
+  .populaires-title {
+    margin-bottom: 15px;
+  }
+
+  .hebergements h4 {
+    padding-top: 15px;
+  }
+
+  /*** activités mobile ***/
+
+  .activites aside {
+    width: 100%;
+    padding-top: 65px;
+    padding-left: 30px;
+  }
+
+  .marseille-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .marseille-cards .activites-cards {
+    width: auto;
+    margin-top: 15px;
+  }
+
+  /*** footer mobile ***/
+
+  footer {
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px;
+  }
+
+  .footer-list {
+    width: 100%;
+    padding: 0;
+  }
+
+
 
 }
