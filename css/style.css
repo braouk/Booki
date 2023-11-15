@@ -714,6 +714,10 @@ footer li {
     margin-top: 15px;
   }
 
+  .activites-cards img {
+    max-height: 141px;
+  }
+
   /*** footer mobile ***/
 
   footer {
