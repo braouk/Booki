@@ -1,4 +1,4 @@
-/****** General ***********/
+/***** General ****/
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
@@ -102,7 +102,7 @@ li {
   line-height: 16px;
 }
 
-/****** section recherches ******/
+/****** recherches section ******/
 
 .search-section {
   margin-top: 30px;
@@ -201,6 +201,7 @@ form {
 .filters p {
   font-size: 17px;
   font-weight: 700;
+  pointer-events: none;  
 }
 
 .filter {
@@ -218,7 +219,6 @@ form {
 
 .labels-and-filters {
   display: flex;
-
   align-items: center;
   gap: 15px;
 }
@@ -469,6 +469,7 @@ footer li {
 /* Medium devices (tablets, less/equal than 1024px) */
 
 @media (max-width: 1024px) {
+    
   .main-container {
     box-sizing: border-box;
     max-width: 1024px;
