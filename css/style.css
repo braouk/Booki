@@ -317,9 +317,7 @@ form {
   width: 66%;
 }
 
-.hebergements h4 {
-  padding-top: 30px;
-}
+
 
 .hebergements-title {
   margin-bottom: 30px;
@@ -329,11 +327,12 @@ form {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-  gap: 30px;
+  
 }
 
 .hebergements-cards .card {
   width: 30%;
+  margin-bottom: 30px;
 }
 
 .hebergements-cards img {
@@ -495,7 +494,7 @@ footer li {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    gap: 30px;
+    
   }
 
   .populaires {
@@ -685,9 +684,7 @@ footer li {
     margin-bottom: 15px;
   }
 
-  .hebergements h4 {
-    padding-top: 15px;
-  }
+
 
   /*** activités mobile ***/
 
